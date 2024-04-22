@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+
+    <!--Link to the Bootstrap.-->
+
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+
+<!--Assigned Bootstrap background to dark with padding of 3 and margin of 4.-->
+
+<body class="text-bg-dark p-3 m-4">
+
+<!--Bootstrap navbar section. This section will contain links to all pages within the website.-->
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-secondary">
+        <a class="navbar-brand" href="index.html">Delicious Dishes</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home Page</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pho.html">Pho</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sushi.html">Sushi</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <br>
+    <br>
+
+<!--Section 1, introduction to my website and some content of what it is about.-->
+
+<h1 class="text-center">Home Page</h1>
+    <br>
+    <br>
+    <br>
+<h2 class="text-center">Two Delicious Dishes</h2>
+    <br>
+<p>Welcome to my second website! On this website, I will be talking about two of my most enjoyable dishes and my top three restaurants to go
+    enjoy those dishes in the Twin Cities Minnesota area. I will be talking a little about what those dishes are and why I enjoy them.
+    I hope you enjoy this content and don't end up feeling too hungry after this visit.
+</p>
+    <br>
+
+<!--Section 2; Bootstrap grid implemented for viewport sizing.-->
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md m-2">
+                <p class="text-center fs-4"><b>About Pho</b></p>
+                <br>
+                <div class="text-center">
+                    <img src="Pho1.jpg"
+                    class="rounded"
+                    alt="A bowl of pho."
+                    width="250">
+                    <br>
+                    <br>
+                </div>
+                <p>Pho is a delicious dish from Vietnamese cuisine. The broth is made of beef and has a rich aroma. As you take 
+                    a sip of the broth, you can enjoy a savory taste of beef and seasonings. The rice noodles should be just right,
+                    not too soft nor hard, then that first bite is a combination of delicous flavor. It is of no surprise that by 
+                    this simple explanation of this dish, pho is one of my most enjoyable dishes.
+                </p>
+            </div>
+            <div class="col-md m-2">
+                <p class="text-center fs-4"><b>About Sushi</b></p>
+                <br>
+                <div class="text-center">
+                    <img src="Sushi1.jpg"
+                    class="rounded"
+                    alt="Variety of sushi on a wooden tray."
+                    width="350">
+                    <br>
+                    <br>
+                </div>
+                <p>Sushi is a delicious dish from Japanese cuisine. The rice is masterfully prepared with the ingredients. The
+                    meat, most commonly seafood, is the perfect combination when paired with soy sauce and wasabi. On top of
+                    the deliciousness of each bite, you also get plenty of omega-3 fatty acids from the fish you are
+                    consuming, which has health benefits. Now, let's talk about variety. There are many different sushi rolls
+                    and sushi combination that will keep you interested in trying more. This is why sushi is one of my most
+                    enjoyable dishes.
+                </p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+
+<!--Bootstrap form section. This section will have a form for visiters to fill out if they want updates on my top 3 places to eat for pho
+and sushi in different cities. Bootstrap grid implemented for viewport sizing.-->
+
+<h3 class="text-center">Want to Stay Updated? Sign Up!</h3>
+    <br>
+<p>If you want to stay updated with my latest news of my top three restaurants to eat for pho and sushi in different cities, please fill
+    out the form below!
+</p>
+
+<form class="row g-3">
+    <div class="col-md-6">
+        <label for="inputFirstName" class="form-label">First Name</label>
+        <input type="firstname" class="form-control" id="inputFirstName">
+    </div>
+    <div class="col-md-6">
+        <label for="inputLastName" class="form-label">Last Name</label>
+        <input type="lastname" class="form-control" id="inputLastName">
+    </div>
+    <div class="col-md-6">
+        <label for="inputEmail4" class="form-label">Email</label>
+        <input type="email" class="form-control" id="inputEmail4">
+    </div>
+    <div class="col-md-6">
+        <label for="inputPassword4" class="form-label">Password</label>
+        <input type="password" class="form-control" id="inputPassword4">
+        <label for="inputPassword4" class="form-label">Confirm Password</label>
+        <input type="password" class="form-control" id="inputPassword4">
+    </div>
+    <div class="col-12">
+        <label for="inputAddress" class="form-label">Address</label>
+        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+    </div>
+    <div class="col-12">
+        <label for="inputAddress2" class="form-label">Address 2</label>
+        <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+    </div>
+    <div class="col-md-6">
+        <label for="inputCity" class="form-label">City</label>
+        <input type="text" class="form-control" id="inputCity">
+    </div>
+    <div class="col-md-4">
+        <label for="inputState" class="form-label">State</label>
+        <select id="inputState" class="form-select">
+            <option selected>Choose...</option>
+            <option>MN</option>
+            <option>WI</option>
+            <option>ND</option>
+        </select>
+    </div>
+    <div class="col-md-2">
+        <label for="inputZip" class="form-label">Zip</label>
+        <input type="text" class="form-control" id="inputZip">
+    </div>
+    <div class="col-12">
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+                I acknowledge to receive updates via email communication.
+            </label>
+        </div>
+    </div>
+    <div class="col-12">
+        <button type="submit" class="btn btn-primary">Sign up</button>
+    </div>
+</form>
+
+    <!--Two scripts added; jquery.js and bootstrap.bundle.js to ensure full functionality of Bootstrap for the web page.-->
+    
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+</body>
+</html>

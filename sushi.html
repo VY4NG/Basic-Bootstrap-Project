@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sushi</title>
+
+    <!--Link to the Bootstrap.-->
+
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+
+<!--Assigned Bootstrap background to dark with padding of 3 and margin of 4.-->
+
+<body class="text-bg-dark p-3 m-4">
+    
+<!--Bootstrap navbar section. This section will contain links to all pages within the website.-->
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-secondary">
+        <a class="navbar-brand" href="index.html">Delicious Dishes</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home Page</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pho.html">Pho</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sushi.html">Sushi</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <br>
+    <br>
+
+<!--Some content, Bootstrap grid implemented for viewport sizing.-->
+
+<h1 class="text-center">Sushi</h1>
+<br>
+
+<div class="text-center">
+    <img src="Sushi2.jpg" 
+    class="rounded" 
+    alt="Variety of sushi on a sushi boat." 
+    width="350">
+    <br>
+    <br>
+
+<!--Bootstrap table section showing my top 3 places for sushi in the Twin Cities.-->
+
+<h2 class="text-center">My Top 3 Places For Sushi in The Twin Cities</h2>
+<br>
+
+<table class="table">
+    <tr class="table-info">
+        <th>Ranking</th>
+        <th>Restaurant Name</th>
+        <th>Address</th>
+        <th>Phone Number</th>
+    </tr>
+    <tr>
+        <td>#1</td>
+        <td>MOMO Sushi</td>
+        <td>1839 Central Ave NE, Minneapolis, MN 55418</td>
+        <td>(612) 789-9190</td>
+    </tr>
+    <tr>
+        <td>#2</td>
+        <td>Mizu Japanese</td>
+        <td>4475 Lake Ave S, White Bear Lake, MN 55110</td>
+        <td>(651) 653-4888</td>
+    </tr>
+    <tr>
+        <td>#3</td>
+        <td>Kona Grill - Minnetonka</td>
+        <td>12235 Wayzata Blvd #1068, Minnetonka, MN 55305</td>
+        <td>(952) 955-9714</td>
+    </tr>
+</table>
+
+    <!--Two scripts added; jquery.js and bootstrap.bundle.js to ensure full functionality of Bootstrap for the web page.-->
+    
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+</body>
+</html>
